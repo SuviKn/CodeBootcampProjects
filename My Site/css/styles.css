@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  /* 16px = 100%, 90px => 90px/16*100 = 562.5%, percentage font size will be affected if you specify smaller characters on your browser */
+  /* 1em = 16px, it's better to use em or % which are dynamically, with zoom there is no difference, pixels are static */
+  /* e.g. 5.6rem (root em) won't be affected by parent, best choice*/
+  margin: 15px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /* if you use width, you also have to specify the margin, if right & left and top and bottom are the same its enugh to use 2 parameters, otherwise 0 auto 0 auto  */
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border-color: #EAF6F6;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+  margin: 50px auto;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+p {
+  color: #40514E;
+  line-height: 2;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  padding-top: 100px;
+  position: relative;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.middle-container {
+  margin-top: 60px;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.skill-row {
+  line-height: 2;
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  /* sets margins on auto for all four sides, and centers the elemetns */
+}
+
+.web-img {
+  float: left;
+  /* use float only for wrapping text around certain element like img, otherwise use position */
+  padding-right: 30px;
+  width: 25%;
+}
+
+.diamond-img {
+  float: right;
+  padding-left: 30px;
+  width: 25%;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.BUTTON_BVV {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   background-color: #66BFBF;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 60px;
+}
+
+.BUTTON_BVV:hover {
+   background: #11999E;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 20px;
+   border-radius: 10px;
+   text-decoration: none;
+}
